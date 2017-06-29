@@ -1,0 +1,38 @@
+Avg. likelihood: (1) -36.5414 1e+32
+Accepted sentences are: 60 / 60
+Avg. likelihood: (2) -35.0887 1.4527
+Accepted sentences are: 60 / 60
+Avg. likelihood: (3) -32.1302 2.95845
+Accepted sentences are: 60 / 60
+Avg. likelihood: (4) -31.2186 0.91166
+Accepted sentences are: 60 / 60
+Avg. likelihood: (5) -31.0408 0.177783
+Accepted sentences are: 60 / 60
+Avg. likelihood: (6) -30.901 0.139811
+Accepted sentences are: 60 / 60
+Avg. likelihood: (7) -30.6743 0.226676
+Accepted sentences are: 60 / 60
+Avg. likelihood: (8) -30.4521 0.222177
+Accepted sentences are: 60 / 60
+Avg. likelihood: (9) -30.3086 0.143472
+Accepted sentences are: 60 / 60
+Avg. likelihood: (10) -30.2283 0.0803057
+Accepted sentences are: 60 / 60
+Avg. likelihood: (11) -30.1789 0.0494485
+Accepted sentences are: 60 / 60
+Avg. likelihood: (12) -30.1545 0.0244159
+Accepted sentences are: 60 / 60
+Avg. likelihood: (13) -30.1379 0.0165453
+Accepted sentences are: 60 / 60
+Avg. likelihood: (14) -30.1271 0.0107958
+Accepted sentences are: 60 / 60
+Avg. likelihood: (15) -30.1188 0.00837931
+Accepted sentences are: 60 / 60
+Avg. likelihood: (16) -30.1018 0.0169923
+Accepted sentences are: 60 / 60
+Avg. likelihood: (17) -30.4803 -0.378566
+Accepted sentences are: 60 / 60
+Avg. likelihood: (18) -30.9006 -0.420232
+Accepted sentences are: 60 / 60
+Avg. likelihood: (19) -31.1523 -0.251774
+Accepted sentences are: 60 / 60

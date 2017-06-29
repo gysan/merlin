@@ -1,0 +1,210 @@
+EST_File utterance
+DataType ascii
+version 2
+EST_Header_End
+Features max_id 80 ; type Text ; iform "\"There was nothing on the rock.\"" ; filename prompt-utt/arctic_a0054.utt ; fileid arctic_a0054 ; 
+Stream_Items
+1 id _1 ; name There ; whitespace "" ; prepunctuation "" ; 
+2 id _2 ; name was ; whitespace " " ; prepunctuation "" ; 
+3 id _3 ; name nothing ; whitespace " " ; prepunctuation "" ; 
+4 id _4 ; name on ; whitespace " " ; prepunctuation "" ; 
+5 id _5 ; name the ; whitespace " " ; prepunctuation "" ; 
+6 id _6 ; name rock ; punc . ; whitespace " " ; prepunctuation "" ; 
+7 id _12 ; name rock ; pos_index 8 ; pos_index_score 0 ; pos nn ; phr_pos n ; phrase_score -0.673004 ; pbreak_index 1 ; pbreak_index_score 0 ; pbreak BB ; 
+8 id _13 ; name . ; pos_index 13 ; pos_index_score 0 ; pos punc ; phr_pos punc ; pbreak_index 0 ; pbreak_index_score 0 ; pbreak BB ; 
+9 id _11 ; name the ; pos_index 2 ; pos_index_score 0 ; pos dt ; phr_pos dt ; phrase_score -3.55305 ; pbreak_index 1 ; pbreak_index_score 0 ; pbreak NB ; 
+10 id _10 ; name on ; pos_index 5 ; pos_index_score 0 ; pos in ; phr_pos in ; phrase_score -4.1715 ; pbreak_index 1 ; pbreak_index_score 0 ; pbreak NB ; 
+11 id _9 ; name nothing ; pos_index 8 ; pos_index_score 0 ; pos nn ; phr_pos n ; phrase_score -6.76778 ; pbreak_index 1 ; pbreak_index_score 0 ; pbreak NB ; 
+12 id _8 ; name was ; pos_index 17 ; pos_index_score 0 ; pos vbd ; phr_pos v ; phrase_score -8.18917 ; pbreak_index 1 ; pbreak_index_score 0 ; pbreak NB ; 
+13 id _7 ; name There ; pos_index 3 ; pos_index_score 0 ; pos ex ; phr_pos ex ; phrase_score -6.55156 ; pbreak_index 1 ; pbreak_index_score 0 ; pbreak NB ; 
+14 id _15 ; name syl ; stress 1 ; 
+15 id _19 ; name syl ; stress 1 ; 
+16 id _23 ; name syl ; stress 1 ; 
+17 id _26 ; name syl ; stress 0 ; 
+18 id _30 ; name syl ; stress 1 ; 
+19 id _33 ; name syl ; stress 0 ; 
+20 id _36 ; name syl ; stress 1 ; 
+21 id _40 ; name pau ; dur_factor 0 ; end 0.15 ; 
+22 id _16 ; name dh ; dur_factor 0.326954 ; end 0.225 ; 
+23 id _17 ; name eh ; dur_factor -0.0898767 ; end 0.24 ; 
+24 id _18 ; name r ; dur_factor 0.330352 ; end 0.285 ; 
+25 id _20 ; name w ; dur_factor -0.166623 ; end 0.35 ; 
+26 id _21 ; name aa ; dur_factor -0.466418 ; end 0.385 ; 
+27 id _22 ; name z ; dur_factor -0.0708717 ; end 0.48 ; 
+28 id _24 ; name n ; dur_factor -0.23094 ; end 0.54 ; 
+29 id _25 ; name ah ; dur_factor -0.0102436 ; end 0.645 ; 
+30 id _27 ; name th ; dur_factor -0.042049 ; end 0.72 ; 
+31 id _28 ; name ih ; dur_factor -0.588171 ; end 0.79 ; 
+32 id _29 ; name ng ; dur_factor -0.40092 ; end 0.855 ; 
+33 id _31 ; name aa ; dur_factor -0.0771909 ; end 1.025 ; 
+34 id _32 ; name n ; dur_factor -0.120097 ; end 1.08 ; 
+35 id _34 ; name dh ; dur_factor -0.783163 ; end 1.095 ; 
+36 id _35 ; name ax ; dur_factor -0.405607 ; end 1.125 ; 
+37 id _37 ; name r ; dur_factor 1.07763 ; end 1.25 ; 
+38 id _38 ; name aa ; dur_factor 0.697089 ; end 1.405 ; 
+39 id _39 ; name k ; dur_factor 1.63203 ; end 1.58 ; 
+40 id _41 ; name pau ; dur_factor 2 ; end 1.625 ; 
+41 id _42 ; name L-L% ; 
+42 id _43 ; name H* ; 
+43 id _44 ; name H* ; 
+44 id _59 ; f0 86.4989 ; pos 1.47696 ; 
+45 id _58 ; f0 89.0363 ; pos 1.27257 ; 
+46 id _57 ; f0 94.3127 ; pos 1.12627 ; 
+47 id _56 ; f0 95.218 ; pos 1.10814 ; 
+48 id _55 ; f0 96.7851 ; pos 1.07154 ; 
+49 id _53 ; f0 105.207 ; pos 0.924394 ; 
+50 id _54 ; f0 100.494 ; pos 0.969966 ; 
+51 id _52 ; f0 109.27 ; pos 0.84778 ; 
+52 id _51 ; f0 114.254 ; pos 0.734646 ; 
+53 id _50 ; f0 119.428 ; pos 0.691305 ; 
+54 id _49 ; f0 111.148 ; pos 0.594737 ; 
+55 id _48 ; f0 111.974 ; pos 0.479776 ; 
+56 id _47 ; f0 115.836 ; pos 0.391237 ; 
+57 id _46 ; f0 119.713 ; pos 0.282113 ; 
+58 id _45 ; f0 103.355 ; pos 0.2 ; 
+59 id _80 ; name BB ; 
+End_of_Stream_Items
+Relations
+Relation Token ; "(" ")" ; 
+7 13 1 0 0 0
+1 1 0 7 2 0
+8 12 2 0 0 0
+2 2 0 8 3 1
+9 11 3 0 0 0
+3 3 0 9 4 2
+10 10 4 0 0 0
+4 4 0 10 5 3
+11 9 5 0 0 0
+5 5 0 11 6 4
+12 7 6 0 13 0
+13 8 0 0 0 12
+6 6 0 12 0 5
+End_of_Relation
+Relation Word ; "(" ")" ; 
+1 13 0 0 2 0
+2 12 0 0 3 1
+3 11 0 0 4 2
+4 10 0 0 5 3
+5 9 0 0 6 4
+6 7 0 0 0 5
+End_of_Relation
+Relation Syllable ; "(" ")" ; 
+1 14 0 0 2 0
+2 15 0 0 3 1
+3 16 0 0 4 2
+4 17 0 0 5 3
+5 18 0 0 6 4
+6 19 0 0 7 5
+7 20 0 0 0 6
+End_of_Relation
+Relation Segment ; "(" ")" ; 
+1 21 0 0 2 0
+2 22 0 0 3 1
+3 23 0 0 4 2
+4 24 0 0 5 3
+5 25 0 0 6 4
+6 26 0 0 7 5
+7 27 0 0 8 6
+8 28 0 0 9 7
+9 29 0 0 10 8
+10 30 0 0 11 9
+11 31 0 0 12 10
+12 32 0 0 13 11
+13 33 0 0 14 12
+14 34 0 0 15 13
+15 35 0 0 16 14
+16 36 0 0 17 15
+17 37 0 0 18 16
+18 38 0 0 19 17
+19 39 0 0 20 18
+20 40 0 0 0 19
+End_of_Relation
+Relation SylStructure ; "(" ")" ; 
+9 22 8 0 10 0
+10 23 0 0 11 9
+11 24 0 0 0 10
+8 14 1 9 0 0
+1 13 0 8 2 0
+13 25 12 0 14 0
+14 26 0 0 15 13
+15 27 0 0 0 14
+12 15 2 13 0 0
+2 12 0 12 3 1
+18 28 16 0 19 0
+19 29 0 0 0 18
+16 16 3 18 17 0
+20 30 17 0 21 0
+21 31 0 0 22 20
+22 32 0 0 0 21
+17 17 0 20 0 16
+3 11 0 16 4 2
+24 33 23 0 25 0
+25 34 0 0 0 24
+23 18 4 24 0 0
+4 10 0 23 5 3
+27 35 26 0 28 0
+28 36 0 0 0 27
+26 19 5 27 0 0
+5 9 0 26 6 4
+30 37 29 0 31 0
+31 38 0 0 32 30
+32 39 0 0 0 31
+29 20 6 30 0 0
+6 7 0 29 7 5
+7 8 0 0 0 6
+End_of_Relation
+Relation IntEvent ; "(" ")" ; 
+1 41 0 0 2 0
+2 42 0 0 3 1
+3 43 0 0 0 2
+End_of_Relation
+Relation Intonation ; "(" ")" ; 
+4 41 1 0 0 0
+1 20 0 4 2 0
+5 42 2 0 0 0
+2 14 0 5 3 1
+6 43 3 0 0 0
+3 16 0 6 0 2
+End_of_Relation
+Relation Target ; "(" ")" ; 
+15 58 1 0 0 0
+1 22 0 15 2 0
+16 57 2 0 0 0
+2 23 0 16 3 1
+17 56 3 0 0 0
+3 25 0 17 4 2
+18 55 4 0 0 0
+4 26 0 18 5 3
+19 54 5 0 0 0
+5 28 0 19 6 4
+20 53 6 0 0 0
+6 29 0 20 7 5
+21 52 7 0 0 0
+7 30 0 21 8 6
+22 51 8 0 0 0
+8 31 0 22 9 7
+23 49 9 0 24 0
+24 50 0 0 0 23
+9 33 0 23 10 8
+25 48 10 0 0 0
+10 35 0 25 11 9
+26 47 11 0 0 0
+11 36 0 26 12 10
+27 46 12 0 0 0
+12 37 0 27 13 11
+28 45 13 0 0 0
+13 38 0 28 14 12
+29 44 14 0 0 0
+14 39 0 29 0 13
+End_of_Relation
+Relation Phrase ; ()
+2 13 1 0 3 0
+3 12 0 0 4 2
+4 11 0 0 5 3
+5 10 0 0 6 4
+6 9 0 0 7 5
+7 7 0 0 0 6
+1 59 0 2 0 0
+End_of_Relation
+End_of_Relations
+End_of_Utterance
