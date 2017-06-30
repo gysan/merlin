@@ -2,7 +2,7 @@ Test on ubuntu 16.04. Language: English
 
 Tools: Festival && Merlin
 
-# 1. download files
+# 1. download files and copy to merlin/tools
 
 [speech_tools](http://festvox.org/packed/festival/2.4/speech_tools-2.4-release.tar.gz)
 
