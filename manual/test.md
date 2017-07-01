@@ -1,5 +1,5 @@
-[Title1](#title1)
-[Title1](#title_one)
+[Title1](#title1)  
+[Title1](#title-two)
 
 dfs  
 dfsd  
