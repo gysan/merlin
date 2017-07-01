@@ -104,15 +104,10 @@ Merlin的Python语言采用的是Python2.7编写，所以我们需要在Python2.
 在这个环境下安装merlin
 
 ```
-
 sudo apt-get install csh
-
 pip install numpy scipy matplotlib lxml theano bandmat
-
 git clone [https://github.com/CSTR-Edinburgh/merlin.git](https://github.com/CSTR-Edinburgh/merlin.git)
-
 cd merlin/tools
-
 ./compile_tools.sh
 
 ```
@@ -125,39 +120,25 @@ cd merlin/tools
 
 `.～/merlin/egs/slt_arctic/s1/run_demo.sh`
 
-该脚本会使用50个音频样本进行声学模型和durarion模型的训练，并合成5个示例音频。在此略去详细的操作步骤，具体可参见：Getting started with the Merlin Speech Synthesis Toolkit
-
-[nstalling-Merlin](https://jrmeyer.github.io/merlin/2017/02/14/Installing-Merlin.html)
+该脚本会使用50个音频样本进行声学模型和durarion模型的训练，并合成5个示例音频。在此略去详细的操作步骤，具体可参见：Getting started with the Merlin Speech Synthesis Toolkit [installing-Merlin](https://jrmeyer.github.io/merlin/2017/02/14/Installing-Merlin.html)
 
 # Merlin开源代码的学习
 
 0 文件含义
 
-Folder          |    Contains
-
----------------- | -------------------
-
-recordings    |    speech recordings, copied from the studio
-
-wav              |    individual wav files for each utterance
-
-pm               |    pitch marks
-
-mfcc            |     MFCCs for use in automatic alignment
-
-lab               |     label files from automatic alignment
-
-utt                |     Festival utterance structures
-
-f0                 |     Pitch contours
-
-coef             |     MFCCs + f0, for the join cost
-
-coef2           |     coef2, but stripped of unnecessary frames to save space, for the join cost
-
-lpc               |     LPCs and residuals, for waveform generation
-
-bap              |     band aperiodicity
+Folder        |    Contains
+------------- | -------------------
+recordings    |     speech recordings, copied from the studio
+wav           |     individual wav files for each utterance
+pm            |     pitch marks
+mfcc          |     MFCCs for use in automatic alignment
+lab           |     label files from automatic alignment
+utt           |     Festival utterance structures
+f0            |     Pitch contours
+coef          |     MFCCs + f0, for the join cost
+coef2         |     coef2, but stripped of unnecessary frames to save space, for the join cost
+lpc           |     LPCs and residuals, for waveform generation
+bap           |     band aperiodicity
 
 1 免费的语料库
 
