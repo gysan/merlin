@@ -64,14 +64,14 @@ cd festival
 ./configure
 make
 ```
-**4.Set Path
+**4.Set Path**
 ```
 bash ~$ export FESTVOXDIR=/home/awb/projects/festvox/
 
 bash ~$ export ESTDIR=/home/awb/projects/speech_tools/
 ```
 
-**5.Using Merlin to generate label
+**5.Using Merlin to generate label**
 
 There are two ways to generate label file from txt 
 
@@ -79,11 +79,11 @@ There are two ways to generate label file from txt
 ```
 ( arctic_a0001 "Author of the danger trail, Philip Steels, etc." )
 ```
-**(1) /merlin/misc/scripts/alignment/phone_align
+**(1) /merlin/misc/scripts/alignment/phone_align**
 
 Please read the README.md
 
-**(2) merlin/egs/slt_arctic/s1/experiments/slt_arctic_demo/test_synthesis/
+**(2) merlin/egs/slt_arctic/s1/experiments/slt_arctic_demo/test_synthesis/**
 
 create dir /txt which contain txt file
 
