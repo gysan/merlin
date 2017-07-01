@@ -9,6 +9,11 @@
 韵律短语层  |  /J:j1^j2=j3-j4 /K:k1=k2_k3^k4&k5_k6 /L:l1^l2#l3-l4
 语句层  |  /M:m1#m2+m3+m4!m5
 
+[ ] todo
+[x] done
+[ ] /(optional)todo
+[ ] \(optional)todo
+
 
 标号  |  含义
 ---- | ----
