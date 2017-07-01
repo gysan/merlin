@@ -2,7 +2,7 @@ Test on ubuntu 16.04. Language: English
 
 Tools: Festival && Merlin
 
-** 1. download files and copy to merlin/tools
+** 1. download files and copy to merlin/tools **
 
 [speech_tools](http://festvox.org/packed/festival/2.4/speech_tools-2.4-release.tar.gz)
 
@@ -10,17 +10,17 @@ Tools: Festival && Merlin
 
 [festvox](http://festvox.org/download.html)
 
-** 2. Unzip to merlin/tools
+** 2. Unzip to merlin/tools **
 
 ``` 
 tar -zxvf speech_tools-2.4-release.tar.gz festival-2.4-release.tar.gz festvox-2.7.0-release.tar.gz
 ```
 
-** 3. INSTALL speech tool && festival && festvox
+** 3. INSTALL speech tool && festival && festvox **
 
 Attention: You can read the INSTALL file in(merlin/tools/festival && /speech_tools && /festvox ) if you failed to install festival 
 
-** (1)First download Lexicon and put them in corresponding dir( /merlin/tools/festival/lib/dicts )
+** (1)First download Lexicon and put them in corresponding dir( /merlin/tools/festival/lib/dicts ) **
 
 [http://festvox.org/packed/festival/2.4/festlex_CMU.tar.gz](http://festvox.org/packed/festival/2.4/festlex_CMU.tar.gz)
 
@@ -28,13 +28,13 @@ Attention: You can read the INSTALL file in(merlin/tools/festival && /speech_too
 
 [http://festvox.org/packed/festival/2.4/festlex_POSLEX.tar.gz](http://festvox.org/packed/festival/2.4/festlex_POSLEX.tar.gz)
 
-** (2) Download test Voice and put them in corresponding dir
+** (2) Download test Voice and put them in corresponding dir **
 
 [http://festvox.org/packed/festival/2.4/voices/festvox_rablpc16k.tar.gz](http://festvox.org/packed/festival/2.4/voices/festvox_rablpc16k.tar.gz)
 
 [http://festvox.org/packed/festival/2.4/voices/festvox_kallpc16k.tar.gz](http://festvox.org/packed/festival/2.4/voices/festvox_kallpc16k.tar.gz)
 
-** (3) Installation order: speech tool——festival ——festvox 
+** (3) Installation order: speech tool——festival ——festvox  **
 
 Install Dependent library (as far as I know)
 ```
