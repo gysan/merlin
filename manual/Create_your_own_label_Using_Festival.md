@@ -65,10 +65,11 @@ cd festival
 make
 ```
 # 4.Set Path
+```
+bash ~$ export FESTVOXDIR=/home/awb/projects/festvox/
 
-export FESTVOXDIR=/home/awb/projects/festvox/
-
-export ESTDIR=/home/awb/projects/speech_tools/
+bash ~$ export ESTDIR=/home/awb/projects/speech_tools/
+```
 
 # 5.Using Merlin to generate label
 
