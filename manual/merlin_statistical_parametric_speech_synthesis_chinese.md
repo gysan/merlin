@@ -58,28 +58,18 @@ WaveNet是一个完全的卷积神经网络。在这其中，卷积层拥有不�
 Merlin只能在unix类系统下运行，使用Python2.7，并用theano作为后端，因此在使用Merlin之前，至少需要如下基础
 
 - 熟练掌握linux系统，熟悉shell脚本
-
-
 - 掌握python，了解常用Python库的使用
-
-
 - 掌握theano
-
-
 - 机器学习基础知识
-
-
 - 语音识别和语音合成的知识
 
 熟练地掌握上述知识需要花费大量的时间。在文章的末尾，我们会贴出我们所使用/推荐的学习资料。
 
 ## 2.安装Merlin
 
-Merlin的Python语言采用的是Python2.7编写，所以我们需要在Python2.7的环境下运行Merlin，为避免python不同版本之间的冲突，我们采用Anaconda对Python运行环境进行管理。
-
-使用Anaconda创建Merlin运行环境具体操作如下：
-
-打开终端，使用下面命令查看一下现有python环境
+Merlin的Python语言采用的是Python2.7编写，所以我们需要在Python2.7的环境下运行Merlin，为避免python不同版本之间的冲突，我们采用Anaconda对Python运行环境进行管理。  
+使用Anaconda创建Merlin运行环境具体操作如下：  
+打开终端，使用下面命令查看一下现有python环境  
 
 `conda env list`
 
@@ -96,7 +86,7 @@ Merlin的Python语言采用的是Python2.7编写，所以我们需要在Python2.
 ```
 sudo apt-get install csh
 pip install numpy scipy matplotlib lxml theano bandmat
-git clone [https://github.com/CSTR-Edinburgh/merlin.git](https://github.com/CSTR-Edinburgh/merlin.git)
+git clone https://github.com/CSTR-Edinburgh/merlin.git
 cd merlin/tools
 ./compile_tools.sh
 
@@ -132,12 +122,11 @@ bap           |     band aperiodicity
 
 1 免费的语料库
 
-Merlin使用了网络上免费的语料库slt_arctic，可以在以下网址进行下载：[http://104.131.174.95/slt_arctic_full_data.zip](http://104.131.174.95/slt_arctic_full_data.zip)
+Merlin使用了网络上免费的语料库slt_arctic，可以在以下网址进行下载：[slt_arctic_full_data.zip](http://104.131.174.95/slt_arctic_full_data.zip)
 
 2 训练数据的处理
 
-Merlin自带的demo（merlin/egs/slt_arctic/s1 ）已经事先完成了label文件的提取，所以这里不需要前端FrontEnd对数据进行处理。
-
+Merlin自带的demo（merlin/egs/slt_arctic/s1 ）已经事先完成了label文件的提取，所以这里不需要前端FrontEnd对数据进行处理。  
 Merlin通过脚本文件setup.sh在～/merlin/egs/slt_arctic/s1 目录下创建目录experiments，在experiments目录下创建目录slt_arctic_demo，完成数据的下载与解压，并将解压后的数据分别放到slt_arctic_demo/acoustic_mode/data，slt_arctic_demo/duration_model/data目录下，分别用于声学模型和持续时间模型的训练。
 
 3 Demo语料库的训练
@@ -163,14 +152,8 @@ Demo中提供了简单的合成方法，使用demo（merlin/egs/slt_arctic/s1 �
 Merlin一共提供了4类神经网络用于HMM模型的训练，分别是
 
 - 前馈神经网络
-
-
 - 基于LSTM的RNN网络
-
-
 - 双向RNN网络
-
-
 - 其他变体（如blstm）
 
 1）前馈神经网络
@@ -218,24 +201,14 @@ Merlin一共提供了4类神经网络用于HMM模型的训练，分别是
 如“基于HMM模型的语音合成系统”图片所示，英文语音合成分成训练和合成阶段，而训练阶段又由以下几个步骤组成
 
 - 文本分析——对应FrontEnd
-
-
 - HMM模型聚类——对应Question File
-
-
 - 音频特征参数提取——对应Vocoder
-
-
 - HMM模型训练——对应HMM模型训练
 
 合成阶段则包括
 
 - HMM解码——对应HMM模型训练
-
-
 - 文本分析——对应FrontEnd
-
-
 - 语音合成——对应Vocoder
 
 由于网上已有大量关于HMM模型的介绍，而且由于篇幅所限，本文不对HMM模型进行详细的说明。
@@ -248,42 +221,32 @@ Merlin一共提供了4类神经网络用于HMM模型的训练，分别是
 
 语音合成前端（Front-End）实际上是一个文本分析器，属于 NLP(Natural Language Processing)的研究范畴，其目的是
 
- – 对输入文本在语言层、语法层、语义层的分析
-
- – 将输入的文本转换成层次化的语音学表征
-
- • 包括读音、分词、短语边界、轻重读等 
-
- • 上下文特征（context feature）
+ - 对输入文本在语言层、语法层、语义层的分析
+ - 将输入的文本转换成层次化的语音学表征
+     - 包括读音、分词、短语边界、轻重读等 
+     - 上下文特征（context feature）
 
 （1）Label的分类
 
 在Merlin中，Label有两种类别，分别是
 
-- **state align **（使用HTK来生成，以发音状态为单位的label文件，一个音素由几个发音状态组成）
-
-
-- **phoneme align（**使用Festvox来生成，以音素为单位的label文件）
+- **state align**（使用HTK来生成，以发音状态为单位的label文件，一个音素由几个发音状态组成）
+- **phoneme align**（使用Festvox来生成，以音素为单位的label文件）
 
 （2）txt to utt
 
-文本到文本规范标注文件是非常重要的一步，这涉及自然语言处理，对于英文来说，具体工程实现可使用Festival，参见：
-
-Creating .utt Files for English [http://www.cs.columbia.edu/~ecooper/tts/utt_eng.html](http://www.cs.columbia.edu/~ecooper/tts/utt_eng.html)
-
+文本到文本规范标注文件是非常重要的一步，这涉及自然语言处理，对于英文来说，具体工程实现可使用Festival，参见：[Creating .utt Files for English](http://www.cs.columbia.edu/~ecooper/tts/utt_eng.html)  
 Festival 使用了英文词典，语言规范等文件，用最新的EHMM alignment工具将txt转换成包含了文本特征（如上下文，韵律等信息）的utt文件
 
 （3）utt to label    
 
-在获得utt的基础上，需要对每个音素的上下文信息，韵律信息进行更为细致的整理，对于英文的工程实现可参见：
+在获得utt的基础上，需要对每个音素的上下文信息，韵律信息进行更为细致的整理，对于英文的工程实现可参见：[Creating Label Files for Training Data](http://www.cs.columbia.edu/~ecooper/tts/labels.html)  
 
-Creating Label Files for Training Data [http://www.cs.columbia.edu/~ecooper/tts/labels.html](http://www.cs.columbia.edu/~ecooper/tts/labels.html)
-
-label文件的格式请参见：[http://www.cs.columbia.edu/~ecooper/tts/lab_format.pdf](http://www.cs.columbia.edu/~ecooper/tts/lab_format.pdf)
+label文件的格式请参见：[lab_format.pdf](http://www.cs.columbia.edu/~ecooper/tts/lab_format.pdf)
 
 （4）label to training-data（HMM模型聚类）TODO
 
-由于基于上下文信息的HMM模型过于庞大，有必要对HMM模型进行聚类，即使用问题集Question file.（可以参考决策树聚类[http://blog.csdn.net/quhediegooo/article/details/61202901](http://blog.csdn.net/quhediegooo/article/details/61202901)）（这个Question sets目测可以看HTS的文档来获得进一步的解释）
+由于基于上下文信息的HMM模型过于庞大，有必要对HMM模型进行聚类，即使用问题集Question file.（可以参考[决策树聚类](http://blog.csdn.net/quhediegooo/article/details/61202901)）（这个Question sets目测可以看HTS的文档来获得进一步的解释）
 
 Question file 的解释：
 
@@ -321,7 +284,7 @@ World
 
 音频文件通过World声码器产生的是：60维的MGC特征，可变维度的BAP特征以及1维的LF0特征，对于16kHz采样的音频信号，BAP的维度为1，对于48kHz采样的音频信号，BAP的维度为5
 
-网址为：[https://github.com/mmorise/World](https://github.com/mmorise/World)
+网址为：[github.com/mmorise/World](https://github.com/mmorise/World)
 
 World_v 2
 
@@ -333,13 +296,10 @@ World_v 2
 
 HTS的训练部分的作用就是由最初的原始语料库经过处理和模型训练后得到这些训练语料的HMM模型[5]。建模方式的选择首先是状态数的选择,因为语音的时序特性,一个模型的状态数量将影响每个状态持续的长短,一般根据基元确定。音素或半音节的基元,一般采用5状态的HMM;音节的基元一般采用10个状态。在实际的建模中,为了模型的简化,可以将HMM中的转移矩阵用一个时长模型(dur)替代,构成半隐马尔可夫模型HSMM hidden semi-Markov Model。用多空间概率分布对清浊音段进行联合建模,可以取得很好的效果。HTS的合成部分相当于训练部分的逆过程,作用在于由已经训练完成的HMM在输入文本的指导下生成参数,最终生成语音波形。具体的流程是:
 
-(1)通过一定的语法规则、语言学的规律得到合成所需的上下文信息,标注在合成label中。
-
-(2)待合成的label经过训练部分得到的决策树决策,得到语境最相近的叶结点HMM就是模型的决策。
-
-(3)由决策出来的模型解算出合成的基频、频谱参数。根据时长的模型得到各个状态的帧数,由基频、频谱模型的均值和方差算出在相应状态的持续时长帧数内的各维参数数值,结合动态特征,最终解算出合成参数。
-
-(4)由解算出的参数构建源-滤波器模型,合成语音。源的选取如上文所述:对于有基频段,用基频对应的单一频率脉冲序列作为激励;对于无基频段,用高斯白噪声作为激励
+ - 通过一定的语法规则、语言学的规律得到合成所需的上下文信息,标注在合成label中。
+ - 待合成的label经过训练部分得到的决策树决策,得到语境最相近的叶结点HMM就是模型的决策。
+ - 由决策出来的模型解算出合成的基频、频谱参数。根据时长的模型得到各个状态的帧数,由基频、频谱模型的均值和方差算出在相应状态的持续时长帧数内的各维参数数值,结合动态特征,最终解算出合成参数。
+ - 由解算出的参数构建源-滤波器模型,合成语音。源的选取如上文所述:对于有基频段,用基频对应的单一频率脉冲序列作为激励;对于无基频段,用高斯白噪声作为激励
 
 HSMM半隐马尔可夫模型的解释如下
 
@@ -349,7 +309,7 @@ A hidden semi-Markov model (HSMM) is a statistical model with the same structure
 
 Merlin自带英文语音合成，所以实现起来相对简单。你只需要训练Merlin自带的slt_arctic_full音频文件，安装FrontEnd，即可合成拥有基准效果的英文语音。
 
-具体步骤如下参见：[https://github.com/Jackiexiao/merlin/blob/master/manual/Create_your_own_label_Using_Festival.md](https://github.com/Jackiexiao/merlin/blob/master/manual/Create_your_own_label_Using_Festival.md)
+具体步骤如下参见：[Create_your_own_label_Using_Festival.md](https://github.com/Jackiexiao/merlin/blob/master/manual/Create_your_own_label_Using_Festival.md)
 
 # 中文语音合成理论研究
 
@@ -359,19 +319,13 @@ Merlin自带英文语音合成，所以实现起来相对简单。你只需要�
 
 **音节**
 
-音节是由音素构成的。如啊”（ā）（1个音素），“地”（dì）（2个音素），“民”（mín）（3个音素）。
-
-音节示例：如“建设”是两个音节，“图书馆”是三个音节，“社会主义”是四个音节。汉语音节和汉字基本上是一对一，一个汉字也就是一个音节。
-
-音节包含了声母、韵母、音调三个部分。
-
-声母： 声母指音节开头的辅音，共有23个。如dā（搭）的声母是d
-
-韵母： 韵母指音节里声母后面的部分，共38。jiǎ（甲）的韵母是iǎ
-
-音节： 声调指整个音节的高低升降的变化。普通话里dū（督）、dú（毒）、dǔ（赌）、dù（度）
-
-根据《现代汉语词典》，汉语标准音节共 418 个
+音节是由音素构成的。如啊”（ā）（1个音素），“地”（dì）（2个音素），“民”（mín）（3个音素）。  
+音节示例：如“建设”是两个音节，“图书馆”是三个音节，“社会主义”是四个音节。汉语音节和汉字基本上是一对一，一个汉字也就是一个音节。  
+音节包含了声母、韵母、音调三个部分。  
+声母： 声母指音节开头的辅音，共有23个。如dā（搭）的声母是d  
+韵母： 韵母指音节里声母后面的部分，共38。jiǎ（甲）的韵母是iǎ  
+音节： 声调指整个音节的高低升降的变化。普通话里dū（督）、dú（毒）、dǔ（赌）、dù（度）  
+根据《现代汉语词典》，汉语标准音节共 418 个  
 
 **声调**
 
@@ -387,7 +341,7 @@ Merlin自带英文语音合成，所以实现起来相对简单。你只需要�
 
 可参考论文：面向汉语统计参数语音合成的标注生成方法 中提高的标注方法
 
-label文件见：[https://github.com/Jackiexiao/merlin/blob/master/manual/chinese_label.md](https://github.com/Jackiexiao/merlin/blob/master/manual/chinese_label.md)
+中文label文件见：[chinese_label.md](https://github.com/Jackiexiao/merlin/blob/master/manual/chinese_label.md)
 
 2 声码器Vocoder
 
@@ -399,13 +353,13 @@ label文件见：[https://github.com/Jackiexiao/merlin/blob/master/manual/chines
 
 1 语料库
 
-我们使用了指导老师提供的语料库casia。事实上，网络上有清华大学免费提供的语料库，可见：[http://www.cslt.org/news.php?title=News-20160204](http://www.cslt.org/news.php?title=News-20160204)，该语料库质量上乘，提供了用于文本处理的语言模型和词典（Language model and lexicon)，以音素为单位对文本进行了标记，因此事实上清华大学的语料库要比老师提供的语料库更为完成且支持更为全面。因此后续工作可以先用清华大学的语料库进行中文语音合成的训练。
+我们使用了指导老师提供的语料库casia。事实上，网络上有清华大学免费提供的语料库，可见：[清华大学语料库](http://www.cslt.org/news.php?title=News-20160204)，该语料库质量上乘，提供了用于文本处理的语言模型和词典（Language model and lexicon)，以音素为单位对文本进行了标记，因此事实上清华大学的语料库要比老师提供的语料库更为完成且支持更为全面。因此后续工作可以先用清华大学的语料库进行中文语音合成的训练。
 
 除了上面谈到的中文语音公开数据集，还有下面两个数据集
 
-gale_mandarin: 中文新闻广播数据集(LDC2013S08, LDC2013S08)
+ - gale_mandarin: 中文新闻广播数据集(LDC2013S08, LDC2013S08)
 
-hkust: 中文电话数据集(LDC2005S15, LDC2005T32)
+ - hkust: 中文电话数据集(LDC2005S15, LDC2005T32)
 
 2 语料库的规范处理
 
@@ -481,19 +435,15 @@ Merlin: An Open Source Neural Network Speech Synthesis System
 
 **其他论文**
 
-侯亭武. 基于语料库的中文语音合成技术研究[D]. 华中科技大学, 2015.张德良. 深度神经网络在中文语音识别系统中的实现[D]. 北京交通大学, 2015.蔡明琦. 融合发音机理的统计参数语音合成方法研究[D]. 中国科学技术大学, 2015.车浩. 汉语语音合成韵律预测技术研究[J]. 2015.
-
+侯亭武. 基于语料库的中文语音合成技术研究[D]. 华中科技大学, 2015.张德良. 深度神经网络在中文语音识别系统中的实现[D]. 北京交通大学, 2015.蔡明琦. 融合发音机理的统计参数语音合成方法研究[D]. 中国科学技术大学, 2015.车浩. 汉语语音合成韵律预测技术研究[J]. 2015.  
 张斌, 全昌勤, 任福继. 语音合成方法和发展综述[J]. 小型微型计算机系统, 2016, 37(1):186-192.
 
 **相关论文（未读）**
 
-基于声韵母基元的嵌入式中文语音合成系统[http://www.speakit.cn/Group/file/Embeded_SP05.pdf](http://www.speakit.cn/Group/file/Embeded_SP05.pdf)
-
-可變速中文文字轉語音系統
-
-[http://www.aclweb.org/anthology/O10-1016HMM-based](http://www.aclweb.org/anthology/O10-1016HMM-based) 
-
-Mandarin Singing Voice Synthesis UsingTailored Synthesis Units and Question Sets [https://aclweb.org/anthology/O/O13/O13-5005.pdf](https://aclweb.org/anthology/O/O13/O13-5005.pdf)
+基于声韵母基元的嵌入式中文语音合成系统[http://www.speakit.cn/Group/file/Embeded_SP05.pdf](http://www.speakit.cn/Group/file/Embeded_SP05.pdf)  
+可變速中文文字轉語音系統  
+[http://www.aclweb.org/anthology/O10-1016HMM-based](http://www.aclweb.org/anthology/O10-1016HMM-based)   
+Mandarin Singing Voice Synthesis UsingTailored Synthesis Units and Question Sets [https://aclweb.org/anthology/O/O13/O13-5005.pdf](https://aclweb.org/anthology/O/O13/O13-5005.pdf)  
 
 基于深度神经网络的汉语语音合成的研究
 
@@ -523,7 +473,7 @@ Merlin官方教程（正在建设中）
 
 [http://104.131.174.95/Merlin/dnn_tts/doc/build/html/](http://104.131.174.95/Merlin/dnn_tts/doc/build/html/)
 
-**Columbia University TTS manual
+**Columbia University TTS manual**
 
 [http://www.cs.columbia.edu/~ecooper/tts/](http://www.cs.columbia.edu/~ecooper/tts/)
 
@@ -599,33 +549,20 @@ A beginners’ guide to statistical parametric speech synthesis
 
 # 术语表
 
-Front end 前端
-
-vocoder 声音合成机（声码器）
-
-MFCC 参见[http://blog.csdn.net/zouxy09/article/details/9156785/](http://blog.csdn.net/zouxy09/article/details/9156785/)
-
-受限波尔曼兹机
-
-bap band aperiodicity 非周期性 [http://blog.csdn.net/xmdxcsj/article/details/72420051](http://blog.csdn.net/xmdxcsj/article/details/72420051)
-
-ASR：Automatic Speech Recognition自动语音识别
-
-AM：声学模型
-
-LM：语言模型
-
-HMM：Hiden Markov Model 输出序列用于描述语音的特征向量，状态序列表示相应的文字
-
-HTS：HMM-based Speech Synthesis System语音合成工具包
-
-HTK：Hidden Markov Model Toolkit 语音识别的工具包
-
-自编码器
-
-SPTK：speech signal precessing toolkit
-
-SPSS : 统计参数语音合成statistical parametric speech synthesis
+Front end 前端  
+vocoder 声音合成机（声码器）  
+MFCC 参见[http://blog.csdn.net/zouxy09/article/details/9156785/](http://blog.csdn.net/zouxy09/article/details/9156785/)  
+受限波尔曼兹机  
+bap band aperiodicity 非周期性 [http://blog.csdn.net/xmdxcsj/article/details/72420051](http://blog.csdn.net/xmdxcsj/article/details/72420051)  
+ASR：Automatic Speech Recognition自动语音识别  
+AM：声学模型  
+LM：语言模型  
+HMM：Hiden Markov Model 输出序列用于描述语音的特征向量，状态序列表示相应的文字  
+HTS：HMM-based Speech Synthesis System语音合成工具包  
+HTK：Hidden Markov Model Toolkit 语音识别的工具包  
+自编码器  
+SPTK：speech signal precessing toolkit  
+SPSS : 统计参数语音合成statistical parametric speech synthesis  
 
 # 拓展
 
