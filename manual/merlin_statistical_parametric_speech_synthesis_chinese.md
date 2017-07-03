@@ -419,19 +419,15 @@ lab_transf.py
 
 # 参考文献
 
-1 论文部分
+## 1 论文部分
 
 **主要参考论文**
 
-范会敏, 何鑫. 中文语音合成系统的设计与实现[J]. 计算机系统应用, 2017(2):73-77.
-
-郝东亮, 杨鸿武, 张策,等. 面向汉语统计参数语音合成的标注生成方法[J]. 计算机工程与应用, 2016, 52(19):146-153.
-
-Merlin: An Open Source Neural Network Speech Synthesis System 
-
-英文：[http://ssw9.net/papers/ssw9_PS2-13_Wu.pdf](http://ssw9.net/papers/ssw9_PS2-13_Wu.pdf)
-
-中文：[http://blog.csdn.net/lujian1989/article/details/56008786](http://blog.csdn.net/lujian1989/article/details/56008786)
+范会敏, 何鑫. 中文语音合成系统的设计与实现[J]. 计算机系统应用, 2017(2):73-77.  
+郝东亮, 杨鸿武, 张策,等. 面向汉语统计参数语音合成的标注生成方法[J]. 计算机工程与应用, 2016, 52(19):146-153.  
+Merlin: An Open Source Neural Network Speech Synthesis System   
+[英文](http://ssw9.net/papers/ssw9_PS2-13_Wu.pdf)
+[中文](http://blog.csdn.net/lujian1989/article/details/56008786)
 
 **其他论文**
 
@@ -440,163 +436,72 @@ Merlin: An Open Source Neural Network Speech Synthesis System
 
 **相关论文（未读）**
 
-基于声韵母基元的嵌入式中文语音合成系统[http://www.speakit.cn/Group/file/Embeded_SP05.pdf](http://www.speakit.cn/Group/file/Embeded_SP05.pdf)  
-可變速中文文字轉語音系統  
-[http://www.aclweb.org/anthology/O10-1016HMM-based](http://www.aclweb.org/anthology/O10-1016HMM-based)   
-Mandarin Singing Voice Synthesis UsingTailored Synthesis Units and Question Sets [https://aclweb.org/anthology/O/O13/O13-5005.pdf](https://aclweb.org/anthology/O/O13/O13-5005.pdf)  
-
-基于深度神经网络的汉语语音合成的研究
-
-[http://www.jsjkx.com/jsjkx/ch/reader/view_abstract.aspx?file_no=20156A018&flag=1](http://www.jsjkx.com/jsjkx/ch/reader/view_abstract.aspx?file_no=20156A018&flag=1)
-
-Statistical Analysis for Standard Chinese Syllables and Phoneme System
-
-孙敬伟. 统计参数语音合成中的关键技术研究[D]. 中国科学院声学研究所, 2009.
-
- [http://159.226.59.140/handle/311008/556](http://159.226.59.140/handle/311008/556)
-
-顾香. 面向统计参数语音合成的方言文本分析的研究[D]. 西北师范大学, 2014.
-
-[http://xueshu.baidu.com/s?wd=paperuri%3A%28b9485b772c7ab7487d7264d119052f94%29&filter=sc_long_sign&tn=SE_xueshusource_2kduw22v&sc_vurl=http%3A%2F%2Fwww.doc88.com%2Fp-1166631413866.html&ie=utf-8&sc_us=10261735401629849101](http://xueshu.baidu.com/s?wd=paperuri%3A%28b9485b772c7ab7487d7264d119052f94%29&filter=sc_long_sign&tn=SE_xueshusource_2kduw22v&sc_vurl=http%3A%2F%2Fwww.doc88.com%2Fp-1166631413866.html&ie=utf-8&sc_us=10261735401629849101)
-
-温正棋. 统计参数语音合成中语音参数化方法研究[J]. 2013.
-
-（暂时找不到原文）
+ - [基于声韵母基元的嵌入式中文语音合成系统](http://www.speakit.cn/Group/file/Embeded_SP05.pdf)  
+ - [Mandarin Singing Voice Synthesis UsingTailored Synthesis Units and Question Sets](https://aclweb.org/anthology/O/O13/O13-5005.pdf)
+ - [基于深度神经网络的汉语语音合成的研究](http://www.jsjkx.com/jsjkx/ch/reader/view_abstract.aspx?file_no=20156A018&flag=1)  
+ - [孙敬伟. 统计参数语音合成中的关键技术研究](http://159.226.59.140/handle/311008/556)
 
 2 工程实现教程部分
 
-Getting started with the Merlin Speech Synthesis Toolkit
-
-[http://jrmeyer.github.io/merlin/2017/02/14/Installing-Merlin.html](http://jrmeyer.github.io/merlin/2017/02/14/Installing-Merlin.html)
-
-Merlin官方教程（正在建设中）
-
-[http://104.131.174.95/Merlin/dnn_tts/doc/build/html/](http://104.131.174.95/Merlin/dnn_tts/doc/build/html/)
-
-**Columbia University TTS manual**
-
-[http://www.cs.columbia.edu/~ecooper/tts/](http://www.cs.columbia.edu/~ecooper/tts/)
-
-国人使用merlin的经验分享
-
-[http://shartoo.github.io/merlin-tts/](http://shartoo.github.io/merlin-tts/)
-
-HTS tutorial 
-
-[http://hts.sp.nitech.ac.jp/?Tutorial](http://hts.sp.nitech.ac.jp/?Tutorial)
-
-Festvox教程（利用wav 和标记数据创造label）
-
-[http://festvox.org/bsv/](http://festvox.org/bsv/)
-
-speech.zone build-your-own-dnn-voice
-
-[http://www.speech.zone/exercises/build-your-own-dnn-voice/](http://www.speech.zone/exercises/build-your-own-dnn-voice/)
+ - [Getting started with the Merlin Speech Synthesis Toolkit](http://jrmeyer.github.io/merlin/2017/02/14/Installing-Merlin.html)  
+ - [Merlin官方教程（正在建设中）](http://104.131.174.95/Merlin/dnn_tts/doc/build/html/)  
+ - [**Columbia University TTS manual**](http://www.cs.columbia.edu/~ecooper/tts/)  
+ - [HTS tutorial](http://hts.sp.nitech.ac.jp/?Tutorial)  
+ - [Festvox教程（利用wav 和标记数据创造label）](http://festvox.org/bsv/)  
+ - [speech.zone build-your-own-dnn-voice](http://www.speech.zone/exercises/build-your-own-dnn-voice/)   
 
 3 代码部分
 
-Merlin语音合成系统 Github：[https://github.com/CSTR-Edinburgh/merlin](https://github.com/CSTR-Edinburgh/merlin)
-
-Festvox
-
-HTK [http://htk.eng.cam.ac.uk](http://htk.eng.cam.ac.uk/) 
-
-HTS
-
-SPTK
-
-World
+ - [Merlin语音合成系统 Github](https://github.com/CSTR-Edinburgh/merlin)
+ - [Festvox](https://festvox.org)
+ - [HTK](http://htk.eng.cam.ac.uk/) 
+ - HTS
+ - SPTK
+ - World
 
 4 语音识别/合成基础知识
 
-上下文相关的GMM-HMM声学模型
-
-[http://www.cnblogs.com/cherrychenlee/p/6780460.html](http://www.cnblogs.com/cherrychenlee/p/6780460.html)
-
-知乎-语音识别的技术原理是什么？
-
-[https://www.zhihu.com/question/20398418](https://www.zhihu.com/question/20398418)
-
-A beginners’ guide to statistical parametric speech synthesis
-
-英文：[http://www.cstr.ed.ac.uk/downloads/publications/2010/king_hmm_tutorial.pdf](http://www.cstr.ed.ac.uk/downloads/publications/2010/king_hmm_tutorial.pdf)
-
-中文：[https://shartoo.github.io/texttospeech/](https://shartoo.github.io/texttospeech/)
-
-语音产生原理与特征参数提取
-
-[http://blog.csdn.net/u010451580/article/details/51178190](http://blog.csdn.net/u010451580/article/details/51178190)
-
-台湾-语音信号处理教程（包含了语音合成教程）
-
-[http://www.mirlab.org/jang/books/audioSignalProcessing/](http://www.mirlab.org/jang/books/audioSignalProcessing/)
-
-浅谈语音识别基础
-
-[http://www.jianshu.com/p/a0e01b682e8a](http://www.jianshu.com/p/a0e01b682e8a)
-
-语音识别与TTS相关博客
-
-[http://blog.csdn.net/zouxy09/article/category/1218766](http://blog.csdn.net/zouxy09/article/category/1218766)
-
-[English tutorial] for Chinese Spoken Language Processing
-
-[http://iscslp2016.org/slides.html](http://iscslp2016.org/slides.html)
-
-中文语音合成基本概念
-
-[http://staff.ustc.edu.cn/~zhling/Course_SSP/slides/Chapter_13.pdf](http://staff.ustc.edu.cn/~zhling/Course_SSP/slides/Chapter_13.pdf)
+ - [上下文相关的GMM-HMM声学模型](http://www.cnblogs.com/cherrychenlee/p/6780460.html)
+ - [知乎-语音识别的技术原理是什么？](https://www.zhihu.com/question/20398418)
+ - A beginners’ guide to statistical parametric speech synthesis[英文](http://www.cstr.ed.ac.uk/downloads/publications/2010/king_hmm_tutorial.pdf)[中文](https://shartoo.github.io/texttospeech/)
+ - [语音产生原理与特征参数提取](http://blog.csdn.net/u010451580/article/details/51178190)
+ - [台湾-语音信号处理教程（包含了语音合成教程）](http://www.mirlab.org/jang/books/audioSignalProcessing/)
+ - [浅谈语音识别基础](http://www.jianshu.com/p/a0e01b682e8a)
+ - [English tutorial for Chinese Spoken Language Processing](http://iscslp2016.org/slides.html)
+ - [中文语音合成基本概念](http://staff.ustc.edu.cn/~zhling/Course_SSP/slides/Chapter_13.pdf)
 
 # 术语表
 
-Front end 前端  
-vocoder 声音合成机（声码器）  
-MFCC 参见[http://blog.csdn.net/zouxy09/article/details/9156785/](http://blog.csdn.net/zouxy09/article/details/9156785/)  
-受限波尔曼兹机  
-bap band aperiodicity 非周期性 [http://blog.csdn.net/xmdxcsj/article/details/72420051](http://blog.csdn.net/xmdxcsj/article/details/72420051)  
-ASR：Automatic Speech Recognition自动语音识别  
-AM：声学模型  
-LM：语言模型  
-HMM：Hiden Markov Model 输出序列用于描述语音的特征向量，状态序列表示相应的文字  
-HTS：HMM-based Speech Synthesis System语音合成工具包  
-HTK：Hidden Markov Model Toolkit 语音识别的工具包  
-自编码器  
-SPTK：speech signal precessing toolkit  
-SPSS : 统计参数语音合成statistical parametric speech synthesis  
+ - Front end 前端  
+ - vocoder 声音合成机（声码器）  
+ - MFCC 
+ - 受限波尔曼兹机  
+ - bap [band aperiodicity](http://blog.csdn.net/xmdxcsj/article/details/72420051)  
+ - ASR：Automatic Speech Recognition自动语音识别  
+ - AM：声学模型  
+ - LM：语言模型  
+ - HMM：Hiden Markov Model 输出序列用于描述语音的特征向量，状态序列表示相应的文字  
+ - HTS：HMM-based Speech Synthesis System语音合成工具包  
+ - HTK：Hidden Markov Model Toolkit 语音识别的工具包  
+ - 自编码器  
+ - SPTK：speech signal precessing toolkit  
+ - SPSS : 统计参数语音合成statistical parametric speech synthesis  
 
 # 拓展
 
-1 wavenet
+### 1 DeepMind基于深度学习的原始语音生成模型－WaveNet  
+[wavenet-generative-model-raw-audio/](https://deepmind.com/blog/wavenet-generative-model-raw-audio/)  
+[中文版](http://www.w2bc.com/article/171751)  
 
-DeepMind基于深度学习的原始语音生成模型－WaveNet
+[谷歌WaveNet源码详解](https://zhuanlan.zhihu.com/p/24568596)  
+[基于wavenet的中文语音合成](https://github.com/auzxb/Chinese-speech-to-text)  
+[A TensorFlow implementation of DeepMind's WaveNet paper](https://github.com/ibab/tensorflow-wavenet)
 
-英文：[https://deepmind.com/blog/wavenet-generative-model-raw-audio/](https://deepmind.com/blog/wavenet-generative-model-raw-audio/)
+### 2 [开源中文语音识别](https://github.com/kaldi-asr/kaldi/tree/master/egs/thchs30)
 
-中文：[http://www.w2bc.com/article/171751](http://www.w2bc.com/article/171751)
+### 3 [理解百度Deep Voice的语音合成原理](http://mt.sohu.com/20170316/n483703904.shtml)
 
-谷歌WaveNet源码详解[https://zhuanlan.zhihu.com/p/24568596](https://zhuanlan.zhihu.com/p/24568596)
-
-基于wavenet的中文语音合成
-
-[https://github.com/auzxb/Chinese-speech-to-text](https://github.com/auzxb/Chinese-speech-to-text)
-
-A TensorFlow implementation of DeepMind's WaveNet paper
-
-[https://github.com/ibab/tensorflow-wavenet](https://github.com/ibab/tensorflow-wavenet)
-
-2 中文语音识别-开源
-
-开源中文语音识别：[https://github.com/kaldi-asr/kaldi/tree/master/egs/thchs30](https://github.com/kaldi-asr/kaldi/tree/master/egs/thchs30)
-
-3 百度DeepVoice
-
-理解百度Deep Voice的语音合成原理
-
-[http://mt.sohu.com/20170316/n483703904.shtml](http://mt.sohu.com/20170316/n483703904.shtml)
-
-4 微软的中文语音研究包
-
-[https://www.microsoft.com/en-us/research/publication/speech-lab-in-a-box-a-mandarin-speech-toolbox-to-jumpstart-speech-related-research/](https://www.microsoft.com/en-us/research/publication/speech-lab-in-a-box-a-mandarin-speech-toolbox-to-jumpstart-speech-related-research/)
+### 4 [微软的中文语音研究包](https://www.microsoft.com/en-us/research/publication/speech-lab-in-a-box-a-mandarin-speech-toolbox-to-jumpstart-speech-related-research/)
 
 # TODO List
 
