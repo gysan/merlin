@@ -38,8 +38,13 @@ Attention: You can read the INSTALL file in(merlin/tools/festival && /speech_too
 
 Install Dependent library (as far as I know)
 ```
-sudo apt-get -y install libncurses5 libncurses5-dev libcurses-ocaml 
+sudo apt-get -y install libncursesw5 libncurses5 libncurses5-dbg libncurses5-dev libcurses-ocaml 
 ```
+Before the installation, make sure you have the following installed:
+build-essential
+gcc-4.3
+gcc-4.3-multilib
+g++-4
 
 **Speech tool**
 ```

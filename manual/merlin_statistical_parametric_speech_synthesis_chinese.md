@@ -105,7 +105,7 @@ cd merlin/tools
 # Merlin开源代码的学习
 
 ## 0 文件含义
-
+这里仅列出了部分，针对SPTK工具中使用的缩写请参见[SPTK document](https://ftp.netbsd.org/pub/pkgsrc/distfiles/SPTKref-3.6.pdf)
 Folder        |    Contains
 ------------- | -------------------
 recordings    |     speech recordings, copied from the studio
@@ -119,6 +119,7 @@ coef          |     MFCCs + f0, for the join cost
 coef2         |     coef2, but stripped of unnecessary frames to save space, for the join cost
 lpc           |     LPCs and residuals, for waveform generation
 bap           |     band aperiodicity
+utils         |     utility（实用工具)
 
 1 免费的语料库
 
@@ -441,7 +442,7 @@ Merlin: An Open Source Neural Network Speech Synthesis System
  - [基于深度神经网络的汉语语音合成的研究](http://www.jsjkx.com/jsjkx/ch/reader/view_abstract.aspx?file_no=20156A018&flag=1)  
  - [孙敬伟. 统计参数语音合成中的关键技术研究](http://159.226.59.140/handle/311008/556)
 
-2 工程实现教程部分
+## 2 工程实现教程部分
 
  - [Getting started with the Merlin Speech Synthesis Toolkit](http://jrmeyer.github.io/merlin/2017/02/14/Installing-Merlin.html)  
  - [Merlin官方教程（正在建设中）](http://104.131.174.95/Merlin/dnn_tts/doc/build/html/)  
@@ -450,7 +451,7 @@ Merlin: An Open Source Neural Network Speech Synthesis System
  - [Festvox教程（利用wav 和标记数据创造label）](http://festvox.org/bsv/)  
  - [speech.zone build-your-own-dnn-voice](http://www.speech.zone/exercises/build-your-own-dnn-voice/)   
 
-3 代码部分
+## 3 代码部分
 
  - [Merlin语音合成系统 Github](https://github.com/CSTR-Edinburgh/merlin)
  - [Festvox](https://festvox.org)
@@ -459,7 +460,7 @@ Merlin: An Open Source Neural Network Speech Synthesis System
  - SPTK
  - World
 
-4 语音识别/合成基础知识
+## 4 语音识别/合成基础知识
 
  - [上下文相关的GMM-HMM声学模型](http://www.cnblogs.com/cherrychenlee/p/6780460.html)
  - [知乎-语音识别的技术原理是什么？](https://www.zhihu.com/question/20398418)
@@ -469,12 +470,13 @@ Merlin: An Open Source Neural Network Speech Synthesis System
  - [浅谈语音识别基础](http://www.jianshu.com/p/a0e01b682e8a)
  - [English tutorial for Chinese Spoken Language Processing](http://iscslp2016.org/slides.html)
  - [中文语音合成基本概念](http://staff.ustc.edu.cn/~zhling/Course_SSP/slides/Chapter_13.pdf)
+ - [cmu_speech_slides](http://www.speech.cs.cmu.edu/15-492/slides/)
 
 # 术语表
 
  - Front end 前端  
  - vocoder 声音合成机（声码器）  
- - MFCC 
+ - MFCC
  - 受限波尔曼兹机  
  - bap [band aperiodicity](http://blog.csdn.net/xmdxcsj/article/details/72420051)  
  - ASR：Automatic Speech Recognition自动语音识别  
@@ -501,13 +503,12 @@ Merlin: An Open Source Neural Network Speech Synthesis System
 
 ### 3 [理解百度Deep Voice的语音合成原理](http://mt.sohu.com/20170316/n483703904.shtml)
 
-### 4 [微软的中文语音研究包](https://www.microsoft.com/en-us/research/publication/speech-lab-in-a-box-a-mandarin-speech-toolbox-to-jumpstart-speech-related-research/)
 
 # TODO List
 
  - [ ] 清华大学开源的语音包：[http://www.cslt.org/news.php?title=News-20160204](http://www.cslt.org/news.php?title=News-20160204)
 
- - [ ] \(optional)微软的中文语音包
+ - [x] \(optional)微软的中文语音包【微软并没有开源】
 
  - [ ] 中科院的教程[http://iscslp2016.org/slides.html](http://iscslp2016.org/slides.html)
 
